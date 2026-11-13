@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Cuando tener hijos deja de ser prioridad: el nuevo escenario demográfico chileno</title>
+  <meta name="description" content="Reportaje multimedia sobre la crisis de natalidad y el envejecimiento de la población en Chile. Proyecto de Título II de Periodismo, Universidad Autónoma de Chile, 2026.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍼</text></svg>">
+</head>
+<body>
+
+<!--
+  ================================================================
+  DÓNDE ESTÁ CADA COSA
+  - Fotos: carpeta  img/
+  - Videos y audios: todos los enlaces están juntos al comienzo de
+    script.js, en la lista MEDIA. Ahí se cambia un enlace, el nombre
+    o el cargo de quien habla.
+  - Textos: en este archivo, dentro de cada pestaña (<section>).
+  ================================================================
+-->
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <a class="brand" href="#inicio" data-tab-link="inicio">
+      <span class="brand-mark" aria-hidden="true"></span>
+      Natalidad en Chile
+    </a>
+    <nav class="tabs" role="tablist" aria-label="Secciones del reportaje">
+      <button role="tab" id="tab-inicio" aria-controls="inicio" data-tab="inicio">Inicio</button>
+      <button role="tab" id="tab-clinicas" aria-controls="clinicas" data-tab="clinicas">Las clínicas</button>
+      <button role="tab" id="tab-decidir" aria-controls="decidir" data-tab="decidir">Tener hijos</button>
+      <button role="tab" id="tab-envejecer" aria-controls="envejecer" data-tab="envejecer">Envejecer</button>
+      <button role="tab" id="tab-vejez" aria-controls="vejez" data-tab="vejez">La vejez</button>
+      <button role="tab" id="tab-politicas" aria-controls="politicas" data-tab="politicas">Políticas</button>
+      <button role="tab" id="tab-juegos" aria-controls="juegos" data-tab="juegos">Juegos</button>
+      <button role="tab" id="tab-equipo" aria-controls="equipo" data-tab="equipo">Equipo y fuentes</button>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- ============================ INICIO ============================ -->
+<section class="panel" id="inicio" role="tabpanel" aria-labelledby="tab-inicio">
+
+  <div class="hero">
+    <div class="hero-text">
+      <h1>Cuando tener hijos deja de ser prioridad:<span class="h1-sub">el nuevo escenario demográfico chileno</span></h1>
+      <p class="dek">Chile tiene hoy la tercera tasa de fecundidad más baja del mundo. Este reportaje recorre lo que eso significa en las maternidades, en las decisiones de las parejas y en un país que envejece más rápido de lo que se prepara.</p>
+      <p class="byline">Por Camilo García Godoy, Matías Johnston Castro y Lisette Pérez González<br>Proyecto de Título II, Periodismo, Universidad Autónoma de Chile, 2026</p>
+    </div>
+    <figure class="hero-pyramid" aria-labelledby="hero-pyr-cap">
+      <div class="pyr" id="pyr-hero"></div>
+      <figcaption id="hero-pyr-cap">La pirámide de población de Chile entre 1992 y 2070: la base se estrecha y la cima se ensancha. Fuente: INE, estimaciones y proyecciones base Censo 2024.</figcaption>
+    </figure>
+  </div>
+
+  <figure class="slot slot--wide">
+      <div class="slot-frame" style="aspect-ratio:21/9"><img src="img/inicio-portada.jpg" alt="Habitación de maternidad con una cama hospitalaria vacía" loading="lazy"></div>
+      <figcaption>Chile registra una tasa de fecundidad de apenas 0,99 hijos por mujer, muy por debajo de los 2,1 necesarios para el reemplazo generacional. <span class="credit">Crédito: Hospital Clínico de la Universidad de Chile.</span></figcaption>
+    </figure>
+
+  <article class="prose">
+    <p class="lede">Chile atraviesa una crisis demográfica sin precedentes que lo sitúa como el tercer país con la peor tasa de fecundidad del mundo, ubicándose únicamente por detrás de Corea del Sur y Singapur. Con un promedio de apenas 0,99 hijos por mujer, muy por debajo del umbral de reemplazo generacional de 2,1, este escenario refleja una transformación cultural radical en la que la maternidad ha dejado de ser un mandato social por defecto para convertirse en una decisión que compite directamente con otros planes de vida.</p>
+
+    <div class="fert" role="img" aria-label="Chile tiene 0,99 hijos por mujer; el reemplazo generacional requiere 2,1">
+      <div class="fert-row">
+        <span class="fert-label">Chile hoy</span>
+        <span class="fert-bar fert-bar--cl" style="--v:0.99"><b>0,99</b></span>
+      </div>
+      <div class="fert-row">
+        <span class="fert-label">Reemplazo generacional</span>
+        <span class="fert-bar fert-bar--ref" style="--v:2.1"><b>2,1</b></span>
+      </div>
+      <p class="fert-note">Hijos promedio por mujer</p>
+    </div>
+
+    <p>Según el reportaje de investigación de Radio Bío-Bío titulado <cite>“Prefiero un gatito: la dramática cifra que tiene a Chile sin hijos y con tercera peor tasa del mundo”</cite>, el fenómeno responde a un síntoma cultural clave que tiene que ver con la consolidación de nuevos estilos de vida donde la crianza de hijos cede espacio a otras prioridades, como por ejemplo, el cuidado de mascotas.</p>
+
+    <p>Este cambio dialoga directamente con la perspectiva de Ignacio Cáceres, doctor en sociología y docente de la Pontificia Universidad Católica de Chile (PUC), quien detalló que la decisión de tener un hijo empieza a discutir con otras prioridades y deja de ser solo un asunto de costo económico, sino que también el costo de oportunidades.</p>
+  </article>
+
+  <div class="player" data-player="caceres"></div>
+
+  <div class="chapters" aria-label="Capítulos del reportaje">
+    <a href="#clinicas" data-tab-link="clinicas"><b>Dos realidades clínicas</b><span>Clínicas que cierran camas, hospitales con embarazos más complejos.</span></a>
+    <a href="#decidir" data-tab-link="decidir"><b>Decidir tener hijos</b><span>Carrera, cuidados y lo que cuesta criar.</span></a>
+    <a href="#envejecer" data-tab-link="envejecer"><b>Envejecer de golpe</b><span>Comunas con más muertes que nacimientos.</span></a>
+    <a href="#vejez" data-tab-link="vejez"><b>La vejez en silencio</b><span>Salud mental, dientes y cuidados.</span></a>
+    <a href="#politicas" data-tab-link="politicas"><b>Políticas de Estado</b><span>Más allá de los bonos.</span></a>
+    <a href="#juegos" data-tab-link="juegos"><b>Juegos</b><span>Dibuja el futuro de Chile y pon a prueba lo que sabes sobre la vejez.</span></a>
+  </div>
+</section>
+
+<!-- ============================ CLÍNICAS ============================ -->
+<section class="panel" id="clinicas" role="tabpanel" aria-labelledby="tab-clinicas" hidden>
+  <header class="panel-head">
+    <h2>Dos realidades clínicas: clínicas vacías y hospitales complejos</h2>
+    <p class="dek">La baja natalidad no golpea igual a la medicina privada que a la red pública.</p>
+  </header>
+
+  <article class="prose">
+    <p>Esta problemática no se manifiesta de la misma forma a lo largo del sistema de salud en nuestro país. La transición demográfica ha trazado una profunda brecha entre la medicina privada y la red pública; mientras los centros privados reestructuran pabellones y reducen camas por la drástica baja de nacimientos, los hospitales y la Atención Primaria de Salud (APS) absorben un volumen de embarazados de creciente complejidad, fuertemente marcado por la migración y dinámicas sociales distintas.</p>
+
+    <p>En las clínicas del sector privado, el fenómeno de la baja natalidad se traduce en una contracción visible de la infraestructura. Magaly Vergara, matrona jefe de la Clínica Indisa de la Región Metropolitana, evidenció este declive estructural.</p>
+  </article>
+
+  <div class="player" data-player="magaly"></div>
+
+  <figure class="cribs" aria-labelledby="cribs-cap">
+    <div class="cribs-grid" id="cribs" aria-hidden="true"></div>
+    <figcaption id="cribs-cap"><b>−40%</b> de nacimientos en diez años en Clínica Indisa, según la estimación de su matrona jefe. Cada cuna representa el 10% de los partos de hace una década.</figcaption>
+  </figure>
+
+  <article class="prose">
+    <p>Por otra parte, en el sistema público, el descenso de la natalidad no ha derivado en recortes de personal ni en cierres de camas, sino en una reconfiguración de la labor clínica hacia la alta complejidad y la atención psicosocial.</p>
+  </article>
+
+  <div class="player" data-player="moya"></div>
+
+  <figure class="chart-block">
+    <h3>Cada año hay menos bebés en Chile</h3>
+    <p class="chart-sub">Población de 0 años de edad al 30 de junio. Línea continua: estimación; punteada: proyección.</p>
+    <div class="chart-box"><canvas id="ch-bebes" aria-label="Gráfico de la población de 0 años entre 1992 y 2070"></canvas></div>
+    <figcaption>Fuente: INE, Estimaciones y proyecciones de población 1992-2070, base Censo 2024.</figcaption>
+  </figure>
+
+  <div class="person">
+    <figure class="slot slot--portrait">
+      <div class="slot-frame" style="aspect-ratio:1/1"><img src="img/clinicas-stern.jpg" alt="Retrato de la doctora Jocelyn Stern junto a un ecógrafo" loading="lazy"></div>
+      <figcaption>La especialista advirtió sobre los desafíos que enfrenta la obstetricia ante las particularidades de la población migrante. <span class="credit">Crédito: Hospital El Pino.</span></figcaption>
+    </figure>
+    <div class="prose">
+      <p>El panorama en los hospitales públicos de la periferia metropolitana, como el CRS El Pino (que atiende a comunas como San Bernardo y El Bosque), la disminución de nacimientos convive con el ingreso de pacientes migrantes más jóvenes y con mayor vulnerabilidad social. La Doctora Jocelyn Stern, jefa del Servicio de Ginecología y Obstetricia de dicho recinto, abordó este giro asistencial.</p>
+    </div>
+  </div>
+
+  <div class="player" data-player="stern1"></div>
+
+  <article class="prose">
+    <p>A pesar de que las estadísticas nacionales del Ministerio de Salud (Minsal) apuntan a un descenso acelerado en la fecundidad adolescente a nivel global en Chile —con caídas de más del 70% en las últimas dos décadas gracias al acceso a métodos anticonceptivos de larga duración (LARC) en la red pública—, en sectores vulnerables el fenómeno se mantiene activo por causas profundas de raíz social.</p>
+
+    <aside class="callout">
+      <span class="callout-num">+70%</span>
+      <p>cayó la fecundidad adolescente en dos décadas. <a href="https://www.utalca.cl/noticias/embarazo-adolescente-chile-registra-importante-disminucion-en-las-cifras/" target="_blank" rel="noopener">Ver nota de la Universidad de Talca</a></p>
+    </aside>
+
+    <p>Lejos de responder únicamente a un fallo en la planificación familiar, en comunas con menores ingresos la gestación temprana persiste como una vía de afirmación personal y autonomía dentro del núcleo familiar. Así lo graficó la Dra. Stern desde la práctica hospitalaria.</p>
+  </article>
+
+  <div class="player" data-player="stern2"></div>
+
+  <figure class="slot">
+      <div class="slot-frame" style="aspect-ratio:3/2"><img src="img/clinicas-hospital.jpg" alt="Sala de espera con módulos de atención y farmacia ambulatoria en el hospital" loading="lazy"></div>
+      <figcaption>Chile registró una caída de más del 70% en la fecundidad adolescente entre fines de los 2000 y 2020. <span class="credit">Crédito: Hospital El Pino.</span></figcaption>
+    </figure>
+</section>
+
+<!-- ============================ DECIDIR ============================ -->
+<section class="panel" id="decidir" role="tabpanel" aria-labelledby="tab-decidir" hidden>
+  <header class="panel-head">
+    <h2>¿Por qué tener hijos se vuelve una decisión más difícil?</h2>
+    <p class="dek">La carrera profesional, el reparto desigual de los cuidados y el costo de criar pesan sobre las nuevas generaciones.</p>
+  </header>
+
+  <div class="person">
+    <figure class="slot slot--portrait">
+      <div class="slot-frame" style="aspect-ratio:1/1"><img src="img/decidir-rosell.jpg" alt="Retrato de Javiera Rosell" loading="lazy"></div>
+      <figcaption>La académica sostuvo que la maternidad compite cada vez más con los proyectos profesionales y personales de las mujeres. <span class="credit">Crédito: LinkedIn.</span></figcaption>
+    </figure>
+    <div class="prose">
+      <p>Este fenómeno también puede observarse desde la experiencia de las nuevas generaciones. La psicóloga y académica de la Universidad de Chile, Javiera Rosell, planteó que la decisión de formar una familia se cruza cada vez más con otros proyectos personales, particularmente la trayectoria profesional de las mujeres. A ello se suma el costo económico asociado a la vivienda y a la crianza.</p>
+    </div>
+  </div>
+
+  <div class="player" data-player="rosell1"></div>
+
+  <div class="person">
+    <figure class="slot slot--portrait">
+      <div class="slot-frame" style="aspect-ratio:1/1"><img src="img/decidir-wiegand.jpg" alt="Retrato de María del Pilar Wiegand" loading="lazy"></div>
+      <figcaption>La maternidad puede significar un retroceso laboral para las mujeres, advirtió Wiegand. <span class="credit">Crédito: LinkedIn.</span></figcaption>
+    </figure>
+    <div class="prose">
+      <p>La tensión aparece cuando ambos proyectos —el familiar y el laboral— deben convivir. María del Pilar Wiegand, doctora en Sociología y académica de la Universidad Adolfo Ibáñez (UAI), explicó que el ingreso de las mujeres al mercado laboral no estuvo acompañado por una incorporación equivalente de los hombres a las tareas domésticas y de cuidado.</p>
+    </div>
+  </div>
+
+  <div class="player" data-player="wiegand1"></div>
+
+  <article class="prose">
+    <p>De acuerdo con la II Encuesta Nacional sobre Uso del Tiempo del INE, las mujeres destinan en un día tipo 4 horas y 57 minutos al trabajo no remunerado, mientras que los hombres únicamente dedican 2 horas y 52 minutos. La diferencia alcanza las 2 horas y 5 minutos diarios. Entre las personas de 25 a 44 años —grupo especialmente relevante para la crianza—, la brecha llega a 2 horas y 32 minutos.</p>
+  </article>
+
+  <figure class="chart-block">
+    <h3>Las mujeres dedican dos horas más al día al trabajo no remunerado</h3>
+    <p class="chart-sub">Tiempo destinado en un día tipo, en horas y minutos.</p>
+    <div class="chart-box chart-box--short"><canvas id="ch-tiempo" aria-label="Gráfico de tiempo de trabajo no remunerado por sexo"></canvas></div>
+    <figcaption>Fuente: INE, II Encuesta Nacional sobre Uso del Tiempo.</figcaption>
+  </figure>
+
+  <article class="prose">
+    <p>Rosell coincide en que el reparto de las tareas domésticas y de cuidado es un factor relevante al momento de pensar en la maternidad. Desde la psicología, advirtió que combinar el trabajo remunerado con la crianza puede provocar un importante desgaste, especialmente cuando las responsabilidades no se distribuyen de manera equilibrada.</p>
+  </article>
+
+  <div class="player" data-player="rosell2"></div>
+
+  <article class="prose">
+    <p>A esa sobrecarga se suma el costo que la maternidad puede tener sobre la trayectoria laboral. Wiegand argumentó que la ausencia temporal asociada al nacimiento de un hijo no necesariamente implica solo una pausa profesional, sino que puede traducirse en un retroceso frente a quienes mantienen su continuidad laboral. Mientras las mujeres deben compatibilizar su regreso al trabajo con nuevas responsabilidades de cuidado, los hombres suelen conservar una mayor continuidad.</p>
+  </article>
+
+  <div class="player" data-player="wiegand2"></div>
+
+  <div class="cost">
+    <header class="cost-head">
+      <h3>¿Cuánto cuesta criar en Chile?</h3>
+      <p>Un hogar con niños, niñas o adolescentes gasta entre un <b>27% y un 31% más</b> que uno sin hijos. El primer hijo concentra la mayor parte del costo.</p>
+    </header>
+    <div class="cost-grid">
+      <figure class="chart-block chart-block--flat">
+        <h4>Costo mensual promedio</h4>
+        <div class="donut-wrap">
+          <div class="chart-box chart-box--donut"><canvas id="ch-costo" aria-label="Costo mensual de la crianza dividido en bienes y servicios y tiempo de cuidado"></canvas></div>
+          <div class="donut-center"><b>$595.000</b><span>al mes</span></div>
+        </div>
+        <ul class="legend legend--sm">
+          <li><i class="sw sw--down"></i><b>$383.267</b> bienes y servicios</li>
+          <li><i class="sw sw--up"></i><b>$211.616</b> tiempo de cuidado</li>
+        </ul>
+      </figure>
+      <figure class="chart-block chart-block--flat">
+        <h4>Costo mensual según la edad del hijo o hija</h4>
+        <div class="chart-box chart-box--short"><canvas id="ch-edad" aria-label="Costo mensual según la edad"></canvas></div>
+      </figure>
+      <figure class="chart-block chart-block--flat cost-wide">
+        <h4>Con los años el cuidado pesa menos y los gastos pesan más</h4>
+        <div class="chart-box chart-box--short"><canvas id="ch-distrib" aria-label="Distribución del costo según edad"></canvas></div>
+      </figure>
+    </div>
+    <dl class="defs">
+      <div><dt>Bienes y servicios</dt><dd>Alimentación, educación, salud, transporte y otros productos y servicios asociados a la crianza.</dd></div>
+      <div><dt>Tiempo de cuidado</dt><dd>Tiempo no remunerado que madres, padres y cuidadores destinan a la crianza, valorizado en pesos.</dd></div>
+    </dl>
+    <p class="source">Fuente: Ministerio de la Mujer y la Equidad de Género, Primera Canasta de Crianza de Chile, Encuesta de Presupuestos Familiares 2021-2022 y Encuesta Nacional sobre Uso del Tiempo 2023.</p>
+  </div>
+
+  <article class="prose">
+    <p>En ese contexto, la conciliación no termina necesariamente cuando existe una sala cuna: también importa si los sistemas de cuidado se ajustan a las jornadas y necesidades reales de las familias. Wiegand plantea avanzar hacia una mayor flexibilidad laboral, empleos de media jornada y salas cuna universales para facilitar la crianza. El desafío es que tener hijos no implica que las mujeres deban asumir, además de los cuidados, el costo de frenar o postergar su desarrollo profesional.</p>
+  </article>
+</section>
+
+<!-- ============================ ENVEJECER ============================ -->
+<section class="panel" id="envejecer" role="tabpanel" aria-labelledby="tab-envejecer" hidden>
+  <header class="panel-head">
+    <h2>El impacto de envejecer de golpe</h2>
+    <p class="dek">En 2025, casi la mitad de las comunas de Chile registró más defunciones que nacimientos.</p>
+  </header>
+
+  <article class="prose">
+    <p>El cambio demográfico que atraviesa Chile ya comienza a expresarse en la realidad de distintas localidades del país. Según cifras provisionales del Instituto Nacional de Estadísticas (INE), durante 2025 el 45,1% de las comunas registró más defunciones que nacimientos, equivalente a 156 comunas. Entre los casos más pronunciados se encuentran Cochamó, en la Región de Los Lagos, con una tasa de crecimiento natural de -8,6 por cada mil habitantes, Portezuelo, en Ñuble, con -7,0, y Río Hurtado, en Coquimbo, con -5,9. El fenómeno refleja el avance del envejecimiento y la baja natalidad en distintos territorios, en especial en localidades rurales.</p>
+  </article>
+
+  <figure class="chart-block">
+    <h3>Las comunas donde la población más se achica</h3>
+    <p class="chart-sub">Tasa de crecimiento natural 2025 (nacimientos menos defunciones), por cada mil habitantes.</p>
+    <div class="chart-box chart-box--short"><canvas id="ch-comunas" aria-label="Tasa de crecimiento natural de Cochamó, Portezuelo y Río Hurtado"></canvas></div>
+    <figcaption>Fuente: INE, cifras provisionales 2025.</figcaption>
+  </figure>
+
+  <figure class="slot slot--wide">
+      <div class="slot-frame" style="aspect-ratio:16/9"><img src="img/envejecer-comuna.jpg" alt="Adultos mayores reunidos en un gimnasio municipal durante una celebración en Portezuelo" loading="lazy"></div>
+      <figcaption>El 45,1% de las comunas registró más defunciones que nacimientos durante 2025. <span class="credit">Crédito: Ilustre Municipalidad de Portezuelo.</span></figcaption>
+    </figure>
+
+  <figure class="chart-block pyr-block">
+    <h3>Explora la pirámide de población, año por año</h3>
+    <p class="chart-sub">Mueve el control o presiona reproducir. En amarillo, menores de 15 años; en azul, personas de 65 años o más.</p>
+    <div class="pyr-controls">
+      <button type="button" class="btn" id="pyr-play" aria-label="Reproducir la animación">Reproducir</button>
+      <label class="pyr-range">
+        <span class="sr-only">Año</span>
+        <input type="range" id="pyr-year" min="1992" max="2070" step="1" value="2024">
+      </label>
+      <output id="pyr-year-out" for="pyr-year">2024</output>
+    </div>
+    <div class="pyr pyr--big" id="pyr-explore"></div>
+    <div class="pyr-stats" id="pyr-stats" aria-live="polite"></div>
+    <figcaption>Fuente: INE, Estimaciones y proyecciones de población 1992-2070, base Censo 2024. Desde 2025, los valores son proyecciones.</figcaption>
+  </figure>
+
+  <article class="prose">
+    <p>Las consecuencias de esta transformación van más allá de la composición de los hogares y plantean desafíos para sistemas diseñados bajo otra realidad demográfica. El sociólogo y docente de la PUC apuntó a que “la economía se va adaptando a una pirámide poblacional distinta, como el sistema de salud se hace cargo de una población que va a ir sí o sí envejeciendo progresivamente, como el sistema previsional se hace cargo de una realidad intergeneracional que va a ser distinta, donde van a haber más mayores de 65 años que generaciones en edad de trabajar”. Esto plantea desafíos para el financiamiento de las políticas sociales y la capacidad de las instituciones de responder al envejecimiento de la población.</p>
+  </article>
+
+  <figure class="chart-block">
+    <h3>En 2028 habrá más personas mayores que niños</h3>
+    <p class="chart-sub">Población de 0 a 14 años y de 65 años o más, en millones.</p>
+    <div class="chart-box"><canvas id="ch-cruce" aria-label="Población de 0 a 14 años y de 65 o más entre 1992 y 2070"></canvas></div>
+    <figcaption>Fuente: INE, Estimaciones y proyecciones de población 1992-2070, base Censo 2024.</figcaption>
+  </figure>
+
+  <article class="prose">
+    <p>Desde el punto de vista educativo, este deberá adaptarse a la disminución de nacimientos, que reducirá la cantidad de estudiantes y podría obligar a reorganizar la oferta educativa. Cáceres advirtió que “la proporción genera desafíos para los servicios previsionales, el sistema educacional, cómo se van adaptando los colegios que van a tener que ir cerrando, que se van a tener que ir fusionando con otros porque va a haber menos estudiantes”. A su juicio, esta adaptación será necesaria incluso si se implementan medidas para incentivar la natalidad, pues la transformación demográfica continuará durante los próximos años.</p>
+
+    <p>A ello se suma el desafío sanitario, ya que vivir más años no necesariamente significa hacerlo en buenas condiciones de salud. Viviana García, directora ejecutiva del Centro Gerópolis de la Universidad de Valparaíso, alertó que en Chile existe una brecha cercana a una década entre la esperanza de vida y la esperanza de vida saludable. “Los últimos 10 años de vida, en promedio, las personas viven en malas condiciones de salud. Y eso está estudiado”, agregando que “si además le sumamos que esas personas viven más, pero en menores condiciones de salud, sus patologías significan una mayor carga en salud”.</p>
+
+    <aside class="callout callout--peri">
+      <span class="callout-num">~10 años</span>
+      <p>separan la esperanza de vida de la esperanza de vida saludable en Chile, según Viviana García (Centro Gerópolis).</p>
+    </aside>
+
+    <p>Frente a este escenario, García sugirió que la prevención debe comenzar desde temprana edad. “Habría que pensar en una mirada de curso de vida, en el fondo que haya mayor educación, empoderamiento, educación en salud, para que las personas puedan invertir desde temprana edad en el cuidado, de tal manera de evitar llegar con malas condiciones de salud”, sostuvo. También alertó que “estamos hablando de una reorientación de recursos, por supuesto, de recursos económicos, porque especialmente en la atención primaria de salud las personas mayores son de los principales usuarios, sin embargo, hay pocos recursos destinados específicamente para ellos”, explicó. El desafío es preparar las políticas de salud, cuidados y protección social para una sociedad más envejecida.</p>
+  </article>
+</section>
+
+<!-- ============================ VEJEZ ============================ -->
+<section class="panel" id="vejez" role="tabpanel" aria-labelledby="tab-vejez" hidden>
+  <header class="panel-head">
+    <h2>El silencio de un cuerpo envejecido: salud mental, dientes y cuidados</h2>
+    <p class="dek">La forma en que la sociedad imagina la vejez termina moldeando cómo se vive.</p>
+  </header>
+
+  <article class="prose">
+    <p>De acuerdo con los resultados preliminares de la 8ª Encuesta de Inclusión y Exclusión Social de las Personas Mayores en Chile (2025), desarrollada por la Facultad de Ciencias Sociales de la Universidad de Chile, el Servicio Nacional del Adulto Mayor (SENAMA) y el Centro GERO, el 72,3% opina que las personas disminuyen su satisfacción vital al envejecer, y un 58,7% cree que, en su mayoría, los mayores no logran valerse por sí mismos. Bajo esa misma línea, el sentimiento predominante al pensar en la propia vejez es el miedo (35,3%), seguido de la tranquilidad (29,8%) y la intranquilidad o tristeza (19,1%). El 42,1% proyecta que su etapa de vejez será "peor" que sus años previos.</p>
+  </article>
+
+  <figure class="chart-block waffle-block">
+    <h3>7 de cada 10 personas creen que la satisfacción con la vida disminuye al envejecer</h3>
+    <div class="waffle-layout">
+      <div class="waffle" id="waffle" role="img" aria-label="72,3% cree que la satisfacción disminuye, 19,3% que se mantiene y 8,4% que aumenta"></div>
+      <ul class="legend">
+        <li><i class="sw sw--down"></i><b>72,3%</b> considera que disminuye</li>
+        <li><i class="sw sw--same"></i><b>19,3%</b> cree que se mantiene</li>
+        <li><i class="sw sw--up"></i><b>8,4%</b> estima que aumenta</li>
+      </ul>
+    </div>
+    <figcaption>Fuente: 8ª Encuesta de Inclusión y Exclusión Social de las Personas Mayores en Chile (2025), U. de Chile, SENAMA y Centro GERO.</figcaption>
+  </figure>
+
+  <div class="stats">
+    <div><b>58,7%</b><span>cree que, en su mayoría, las personas mayores no logran valerse por sí mismas.</span></div>
+    <div><b>42,1%</b><span>proyecta que su propia vejez será peor que sus años previos.</span></div>
+  </div>
+
+  <figure class="chart-block">
+    <h3>El miedo es lo primero que aparece al pensar en la propia vejez</h3>
+    <p class="chart-sub">Sentimiento predominante al pensar en la propia vejez, en porcentaje.</p>
+    <div class="chart-box chart-box--short"><canvas id="ch-sentir" aria-label="Sentimientos al pensar en la vejez"></canvas></div>
+    <figcaption>Fuente: 8ª Encuesta de Inclusión y Exclusión Social de las Personas Mayores en Chile (2025).</figcaption>
+  </figure>
+
+  <div class="person">
+    <figure class="slot slot--portrait">
+      <div class="slot-frame" style="aspect-ratio:1/1"><img src="img/vejez-martinez.jpg" alt="Retrato de Mijal Martínez" loading="lazy"></div>
+      <figcaption>La académica apuntó a que la sobreprotección y la falta de espacios pueden acelerar la pérdida de autonomía en la vejez. <span class="credit">Crédito: LinkedIn.</span></figcaption>
+    </figure>
+    <div class="prose">
+      <p>Esta percepción negativa suele contrastar con la realidad funcional de los adultos mayores y repercutir directamente en su bienestar psicológico. La psicóloga especialista en psicogerontología y docente, Mijal Martínez, justificó que este desajuste genera un fenómeno de “profecía autocumplida”, donde las personas internalizan las bajas expectativas del entorno. A su juicio, la sobreprotección y la falta de espacios terminan por mermar la autonomía y acelerar el deterioro emocional, instalando la idea errada de que el paso de los años equivale forzosamente a la dependencia o a la pérdida de capacidades.</p>
+    </div>
+  </div>
+
+  <div class="player" data-player="martinez"></div>
+
+  <figure class="slot">
+      <div class="slot-frame" style="aspect-ratio:3/2"><img src="img/vejez-persona-mayor.jpg" alt="Una pareja de personas mayores sonríe mientras camina por un centro comercial" loading="lazy"></div>
+      <figcaption>Los estereotipos sobre la vejez pueden limitar los proyectos y la autonomía de los adultos mayores, sostuvo Martínez. <span class="credit">Crédito: Pexels.</span></figcaption>
+    </figure>
+
+  <article class="prose">
+    <p>A este deterioro se suman las barreras estructurales en el propio sistema sanitario, donde la falta de información y la desatención terminan silenciando necesidades básicas como la salud bucal y los cuidados diarios. Viviana García señaló que muchas personas mayores pierden garantías por simple desconocimiento institucional, como la atención odontológica integral que ofrece el Plan AUGE/GES a los 60 años y que caduca al cumplir los 61. “Mucha gente la pierde porque no sabe que existe. Y esa evaluación odontológica tiene una canasta súper amplia de prestaciones y de servicios a tal punto que si la persona necesita tratamiento dental, ayudarse con una prótesis dental, eso también está incluido”, explicó.</p>
+
+    <aside class="callout callout--peri">
+      <span class="callout-num">60 años</span>
+      <p>es la edad en que el GES cubre una atención odontológica integral, incluidas prótesis. La garantía caduca a los 61.</p>
+    </aside>
+  </article>
+
+  <div class="person">
+    <figure class="slot slot--portrait">
+      <div class="slot-frame" style="aspect-ratio:1/1"><img src="img/vejez-leon.jpg" alt="Retrato de Soraya León" loading="lazy"></div>
+      <figcaption>León dijo que la pérdida de piezas dentales puede afectar la autoestima, fomentar el aislamiento social y favorecer la depresión en adultos mayores. <span class="credit">Crédito: Universidad de Talca.</span></figcaption>
+    </figure>
+    <div class="prose">
+      <p>A ello se le suma un importante dato de la decana de la Facultad de Odontología de la Universidad de Talca y especialista en odontogeriatría, Soraya León, que sostuvo que en el país persiste el mito cultural de normalizar la pérdida de piezas dentales como parte inevitable del envejecimiento, cuando en realidad se trata de un proceso patológico prevenible. Según la especialista, el daño no es meramente biológico ni se limita a la dificultad de masticar: al perder su dentadura, las personas tienden a recluirse. “En la vejez lo que más podría influir en el deterioro cognitivo asociado a la boca sería el autoestima, el poder salir, el sentirse confiado. Por lo tanto, la gente, claro, no tiene dientes, no hace vida social, se aísla y eso los lleva finalmente a la depresión”, explicó León.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ POLÍTICAS ============================ -->
+<section class="panel" id="politicas" role="tabpanel" aria-labelledby="tab-politicas" hidden>
+  <header class="panel-head">
+    <h2>Políticas de Estado: más allá de los bonos</h2>
+    <p class="dek">Ninguna medida aislada resolverá el problema; los especialistas hablan de reformas de fondo.</p>
+  </header>
+
+  <article class="prose">
+    <p>Las proyecciones del INE indican que para el 2028 Chile ingresará en una fase de crecimiento natural negativo, es decir, que las defunciones superarán al número de nacimientos a nivel nacional, estimándose que hacia 2036 la población total comenzará a decrecer. Ante este panorama de presión sobre la fuerza laboral, la productividad, la salud y las pensiones, el actual Gobierno formalizó la creación de la comisión asesora presidencial "Plan Chile Renace", orientada a diseñar e implementar políticas públicas para el incentivo a la natalidad y el apoyo integral a las familias.</p>
+  </article>
+
+  <figure class="chart-block">
+    <h3>Chile dejará de crecer después de 2035</h3>
+    <p class="chart-sub">Población total al 30 de junio, en millones.</p>
+    <div class="chart-box"><canvas id="ch-total" aria-label="Población total de Chile entre 1992 y 2070"></canvas></div>
+    <figcaption>Fuente: INE, Estimaciones y proyecciones de población 1992-2070, base Censo 2024.</figcaption>
+  </figure>
+
+  <ol class="timeline" aria-label="Hitos demográficos proyectados">
+    <li><b>2025</b><span>156 comunas registran más defunciones que nacimientos.</span></li>
+    <li><b>2028</b><span>Las defunciones superarán a los nacimientos a nivel nacional, y las personas de 65 años o más superarán a los menores de 15.</span></li>
+    <li><b>2035</b><span>La población alcanza su máximo: 20,6 millones de personas.</span></li>
+    <li><b>2036</b><span>La población total de Chile comienza a decrecer.</span></li>
+    <li><b>2070</b><span>Chile tendría 17 millones de habitantes, y más de 4 de cada 10 tendrían 65 años o más.</span></li>
+  </ol>
+
+  <article class="prose">
+    <p>La decana de la Escuela de Gobierno de la UAI y presidenta de la comisión asesora, María José Naudon, recalcó que en Chile la caída de la natalidad ha sido particularmente pronunciada, aunque se trata de un fenómeno mundial ligado a la modernidad y al desarrollo.</p>
+
+    <p>En esa línea, explicó que el objetivo de la instancia es estudiar los factores que inciden en las decisiones reproductivas y revisar la experiencia nacional e internacional para elaborar propuestas de políticas públicas. El trabajo se organizará en ocho ejes: costo de la vida, acceso a la vivienda, apoyos y cuidados, corresponsabilidad y equidad de género, conciliación laboral y familiar, salud reproductiva, formación y estabilidad de los vínculos familiares, y normas sociales y cultura.</p>
+  </article>
+
+  <div class="ejes" role="group" aria-label="Los ocho ejes de trabajo de la comisión">
+    <p class="ejes-title">Los ocho ejes de trabajo de la comisión Plan Chile Renace</p>
+    <ul>
+      <li>Costo de la vida</li>
+      <li>Acceso a la vivienda</li>
+      <li>Apoyos y cuidados</li>
+      <li>Corresponsabilidad y equidad de género</li>
+      <li>Conciliación laboral y familiar</li>
+      <li>Salud reproductiva</li>
+      <li>Formación y estabilidad de los vínculos familiares</li>
+      <li>Normas sociales y cultura</li>
+    </ul>
+  </div>
+
+  <article class="prose">
+    <p>Sin embargo, Naudon afirmó que</p>
+  </article>
+
+  <div class="player" data-player="naudon"></div>
+
+  <figure class="slot" style="max-width:720px">
+      <div class="slot-frame" style="aspect-ratio:3/2"><img src="img/politicas-naudon.jpg" alt="Integrantes de la comisión asesora presidencial Plan Chile Renace junto al Presidente en el Palacio de La Moneda" loading="lazy"></div>
+      <figcaption>Naudon argumentó que abordar la baja natalidad requiere medidas integrales y no soluciones aisladas. <span class="credit">Crédito: Gobierno de Chile.</span></figcaption>
+    </figure>
+
+  <article class="prose">
+    <p>Mirando el futuro de la obstetricia, Stern dijo que</p>
+  </article>
+
+  <div class="player" data-player="stern3"></div>
+
+  <article class="prose closing">
+    <p>Las proyecciones dejan claro que el país hacia el futuro funcionará bajo reglas muy distintas. Con menos nacimientos y más personas mayores, la presión sobre el trabajo, la demanda por mejores condiciones en los servicios públicos irá en aumento. Con las distintas miradas de especialistas, estos coinciden en que ningún bono resolverá el problema por sí solo, ya que el país requerirá reformas profundas para que tener hijos no sea un obstáculo laboral y para que llegar a la vejez no signifique quedar en el desamparo.</p>
+  </article>
+</section>
+
+<!-- ============================ JUEGOS ============================ -->
+<section class="panel" id="juegos" role="tabpanel" aria-labelledby="tab-juegos" hidden>
+  <header class="panel-head">
+    <h2>Juegos: pon a prueba tu intuición</h2>
+    <p class="dek">Dos ejercicios para descubrir por tu cuenta lo que muestran los datos. No hay puntajes que ganar: la idea es comparar lo que imaginas con lo que dicen las cifras y los especialistas.</p>
+  </header>
+
+  <div class="game-switch" role="group" aria-label="Elegir juego">
+    <button type="button" class="game-pick" data-game="draw" aria-pressed="true">
+      <b>Dibuja el futuro de Chile</b><span>Traza cómo crees que cambiará la población hasta 2070.</span>
+    </button>
+    <button type="button" class="game-pick" data-game="myth" aria-pressed="false">
+      <b>¿Mito o realidad?</b><span>Diez ideas comunes sobre la vejez, contrastadas con las fuentes.</span>
+    </button>
+  </div>
+
+  <!-- ---------- Juego 1: Dibuja el futuro ---------- -->
+  <div class="game" id="game-draw">
+    <div class="draw-card">
+      <h3 id="draw-q"></h3>
+      <p class="draw-help" id="draw-help">Los datos hasta 2024 ya están en el gráfico. Arrastra desde el punto hasta el borde derecho para dibujar lo que crees que pasará hasta 2070.</p>
+      <div class="draw-stage">
+        <svg id="draw-svg" viewBox="0 0 720 400" role="img" aria-labelledby="draw-q"></svg>
+      </div>
+      <div class="draw-alt">
+        <label for="draw-range">También puedes elegir tu estimación para 2070 con este control:</label>
+        <div class="draw-alt-row">
+          <input type="range" id="draw-range">
+          <output id="draw-range-out" for="draw-range"></output>
+        </div>
+      </div>
+      <div class="draw-actions">
+        <button type="button" class="btn" id="draw-reveal" disabled>Ver lo que proyecta el INE</button>
+        <button type="button" class="btn btn--ghost" id="draw-reset">Borrar mi línea</button>
+      </div>
+      <div class="draw-result" id="draw-result" aria-live="polite" hidden></div>
+    </div>
+    <p class="source">Fuente: INE, Estimaciones y proyecciones de la población de Chile 1992-2070, base Censo 2024.</p>
+  </div>
+
+  <!-- ---------- Juego 2: Mito o realidad ---------- -->
+  <div class="game" id="game-myth" hidden>
+    <div class="myth-card" id="myth-card">
+      <div class="myth-progress" id="myth-progress" aria-hidden="true"></div>
+      <p class="myth-count" id="myth-count"></p>
+      <p class="myth-statement" id="myth-statement"></p>
+      <div class="myth-buttons" id="myth-buttons">
+        <button type="button" class="myth-btn" data-answer="mito">Mito</button>
+        <button type="button" class="myth-btn" data-answer="realidad">Realidad</button>
+      </div>
+      <div class="myth-answer" id="myth-answer" aria-live="polite" hidden></div>
+    </div>
+    <div class="myth-end" id="myth-end" hidden></div>
+  </div>
+</section>
+
+<!-- ============================ EQUIPO ============================ -->
+<section class="panel" id="equipo" role="tabpanel" aria-labelledby="tab-equipo" hidden>
+  <header class="panel-head">
+    <h2>Equipo y fuentes</h2>
+    <p class="dek">Quiénes hicieron este reportaje y de dónde vienen los datos.</p>
+  </header>
+
+  <div class="team">
+    <figure class="slot slot--portrait member">
+      <div class="slot-frame" style="aspect-ratio:3/4"><img src="img/equipo-camilo.jpg" alt="Retrato de Camilo García Godoy" loading="lazy"></div>
+      <figcaption><b>Camilo García Godoy</b><span>Periodista</span></figcaption>
+    </figure>
+    <figure class="slot slot--portrait member">
+      <div class="slot-frame" style="aspect-ratio:3/4"><img src="img/equipo-matias.jpg" alt="Retrato de Matías Johnston Castro" loading="lazy"></div>
+      <figcaption><b>Matías Johnston Castro</b><span>Periodista</span></figcaption>
+    </figure>
+    <figure class="slot slot--portrait member">
+      <div class="slot-frame" style="aspect-ratio:3/4"><img src="img/equipo-lisette.jpg" alt="Retrato de Lisette Pérez González" loading="lazy"></div>
+      <figcaption><b>Lisette Pérez González</b><span>Periodista</span></figcaption>
+    </figure>
+  </div>
+
+  <p class="guide"><b>Profesor guía:</b> Rolando Araos Millar<br>Proyecto de Título II de Periodismo, Universidad Autónoma de Chile, 2026.</p>
+
+  <div class="sources">
+    <div>
+    <h3>Personas entrevistadas</h3>
+    <ul>
+      <li>Ignacio Cáceres, doctor en Sociología y docente, Pontificia Universidad Católica de Chile</li>
+      <li>Magaly Vergara, matrona jefe, Clínica Indisa (Región Metropolitana)</li>
+      <li>Silvia Moya, matrona, CESFAM San Joaquín</li>
+      <li>Jocelyn Stern, jefa del Servicio de Ginecología y Obstetricia, CRS El Pino</li>
+      <li>Javiera Rosell, psicóloga y académica, Universidad de Chile</li>
+      <li>María del Pilar Wiegand, doctora en Sociología y académica, Universidad Adolfo Ibáñez</li>
+      <li>Viviana García, directora ejecutiva, Centro Gerópolis, Universidad de Valparaíso</li>
+      <li>Mijal Martínez, psicóloga especialista en psicogerontología y docente</li>
+      <li>Soraya León, decana de la Facultad de Odontología, Universidad de Talca</li>
+      <li>María José Naudon, decana de la Escuela de Gobierno UAI y presidenta del Plan Chile Renace</li>
+    </ul>
+    </div>
+    <div>
+    <h3>Datos</h3>
+    <ul>
+      <li><a href="https://www.ine.gob.cl/docs/default-source/proyecciones-de-poblacion/publicaciones-y-anuarios/proyecci%C3%B3n-base-2024/estimaciones-y-proyecciones-de-poblaci%C3%B3n-1992-2070_base-2024_presentaci%C3%B3n-de-resultados.pdf?sfvrsn=41adcf84_5" target="_blank" rel="noopener">INE, Estimaciones y proyecciones de la población de Chile 1992-2070, base Censo 2024.</a></li>
+      <li><a href="https://www.ine.gob.cl/docs/default-source/nacimientos-matrimonios-y-defunciones/publicaciones-y-anuarios/anuarios-de-estad%C3%ADsticas-vitales/estad%C3%ADsticas-vitales-cifras-provisionales-2025.pdf" target="_blank" rel="noopener">INE, estadísticas vitales provisionales 2025.</a></li>
+      <li><a href="https://regiones.ine.cl/valparaiso/prensa/ii-encuesta-nacional-sobre-uso-del-tiempo-(enut)-2023" target="_blank" rel="noopener">INE, II Encuesta Nacional sobre Uso del Tiempo.</a></li>
+      <li><a href="https://minmujeryeg.gob.cl/?p=58018" target="_blank" rel="noopener">Ministerio de la Mujer y la Equidad de Género, Primera Canasta de Crianza de Chile.</a></li>
+      <li><a href="https://www.senama.gob.cl/storage/docs/Encuesta_de_Inclusion_y_Exclusion_social_2025_Digital.pdf" target="_blank" rel="noopener">U. de Chile, SENAMA y Centro GERO, 8ª Encuesta de Inclusión y Exclusión Social de las Personas Mayores en Chile (2025).</a></li>
+      <li><a href="https://www.biobiochile.cl/especial/bbcl-investiga/noticias/articulos/2026/10/12/la-dramatica-estadistica-que-tiene-a-chile-sin-hijos-y-con-la-tercera-peor-tasa-del-mundo.shtml" target="_blank" rel="noopener">Radio Bío-Bío, “Prefiero un gatito: la dramática cifra que tiene a Chile sin hijos y con tercera peor tasa del mundo”.</a></li>
+      <li><a href="https://www.utalca.cl/noticias/embarazo-adolescente-chile-registra-importante-disminucion-en-las-cifras/" target="_blank" rel="noopener">Universidad de Talca, nota sobre embarazo adolescente.</a></li>
+    </ul>
+    </div>
+  </div>
+</section>
+
+<nav class="next" id="next-link" aria-label="Siguiente capítulo"></nav>
+</main>
+
+<footer class="site-foot">
+  <p>Cuando tener hijos deja de ser prioridad. Proyecto de Título II de Periodismo, Universidad Autónoma de Chile, 2026.</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
